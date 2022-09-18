@@ -69,6 +69,18 @@ export default class NavbarComp extends Component {
                 
 
               </Nav>
+              <Nav>
+                <Nav.Link as={Link} to="/Lab1TabChange">
+                 ECE444-Lab1 
+                </Nav.Link>
+
+                {/* <Nav.Link href="/search" style={{ color: "white", display: "inline" }}>
+                  Search
+                </Nav.Link> */}
+
+                
+
+              </Nav>
             </Navbar.Collapse>
           </Navbar>
         </div>
@@ -97,6 +109,11 @@ We are looking for feedback to improve Education Pathways and make it more usefu
             <Route path="/search">
               <SearchResultDisplay />
             </Route>
+
+            <Route path="/Lab1TabChange">
+              <h1> Dennis Lam </h1>
+            </Route>
+
             <Route exact
               path="/courseDetails/:code"
               render={props =>(<CourseDescriptionPage {...props} />)}>
